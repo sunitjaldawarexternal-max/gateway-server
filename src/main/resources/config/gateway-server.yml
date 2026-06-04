@@ -1,0 +1,26 @@
+server:
+  port: 8085
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      access: unrestricted
+  info:
+    env:
+      enabled: true
+
+spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: employee-route
+#          uri: http://localhost:8080
+#          predicates:
+#            - Path=/api/**
+
+#          predicates:
+#            - Path=/api/employees/**,/api/get/**
